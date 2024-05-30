@@ -55,7 +55,101 @@
       myTest();
       echo "<br>";
       myTest(); 
-      echo "<br>"   // Each time the function is called, that variable will still have the information it contained from the last time the function was called.      
+      echo "<br>"; // Each time the function is called, that variable will still have the information it contained from the last time the function was called.      
+
+    // DataTypes
+    /*Variables can store data of different types, and different data types can do different things.
+
+    PHP supports the following data types:
+
+    String
+    Integer
+    Float (floating point numbers - also called double)
+    Boolean
+    Array
+    Object
+    NULL
+    Resource
+    */
+
+    $y = 5;
+    echo var_dump($y);  //The var_dump() function returns the data type and the value:
+    echo "<br>";
+
+    $a = "Hello";
+    echo var_dump($a);
+    echo "<br>";
+
+    $x = 8.365;
+    var_dump($x);
+    echo "<br>";
+
+    $b = True;
+    echo var_dump($b);
+    echo "<br>";
+
+    $cars = array("Volvo","BMW","Toyota");
+    var_dump($cars);
+    echo "<br>";
+
+    // Strings in php
+    $name = "John";
+    echo "$name <br>";
+    echo strlen($name);  //number of letters in the name
+    echo "<br>";
+    echo str_word_count($name);  //count the number of words in the name string
+    echo "<br>";
+    echo strpos($name, "hn"); //search for the letters in the name
+    echo "<br>";
+    echo strtoupper($name); //Uppercase
+    echo "<br>";
+    echo strtolower($name);//Lowercase
+    echo "<br>";
+    echo str_replace("ohn", "ames", $name); //Replace certain letters in the name
+    echo "<br>";
+    echo strrev($name);  //reverse the string name
+    echo "<br>";
+    $c = explode(" ", $name);  //convert string into array
+    print_r($c);
+    echo "<br>";
+    
+    // Concatenating strings
+    $f = "Hello";
+    $g = "World";
+    $z = $f . $g;
+    echo $z;
+    echo "<br>";
+
+    //slicing strings
+    //Start the slice at index 6 and end the slice 5 positions later:
+    $a = "Hello World!";
+    echo substr($a, 6, 5);
+
+    //Start the slice at index 6 and go all the way to the end:
+    $v = "Hello World!";
+    echo substr($v, 6);
+    echo"<br>";
+
+    $x = "We are the so-called \"Vikings\" from the north.";
+    echo $x;
+
+    // PHP Numbers
+    $a = 5;
+    $b = 5.34;
+    $c = "25";
+    echo"<br>";
+
+    //To verify the type of any object in PHP, use the var_dump() function:
+    var_dump($a);
+    echo"<br>";
+    var_dump($b);
+    echo"<br>";
+    var_dump($c);
+    echo"<br>";
+        
+
+
+
 
 
     ?>
