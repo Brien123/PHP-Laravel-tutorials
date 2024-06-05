@@ -146,12 +146,69 @@
     echo"<br>";
     var_dump($c);
     echo"<br>";
-        
 
+    //PHP NaN
+    /*NaN stands for Not a Number.
 
+    NaN is used for impossible mathematical operations.*/
 
+    $x = acos(8);
+    var_dump($x);
+    echo"<br>";
+ 
+    // PHP Constant
+    //  create a constant in php, use the define() method as shown below.
 
+    define('name', 'John Doe');
+    echo name;
+    echo '<br>';
 
+    // using the const keyword
+    const myCar = 'Benz';
+    echo myCar;
+    echo '<br>';
+
+    // Arrays in php 
+    // using the array() method
+    $fruits = array('apple', 'banana', 'mango');
+    echo $fruits[0];
+    echo '<br>';
+
+    // Associative array
+    $age = array('Peter'=>35, 'John'=>30, 'James'=>31);
+    echo $age['Peter'];
+    echo '<br>';
+
+    // COnstant arrays
+    define ('cars', ['alfa romeo', 'benz', 'bmw']);
+    echo cars;
+    echo '<br>';
+    
+    //array methods
+    //count
+    echo count($cars);
+    echo '<br>';
+
+    //array indexing
+    echo cars[0];
+    echo '<br>';
+
+    //channging values
+    $cars[0] = 'Ford';
+    var_dump($cars);
+    echo '<br>';
+
+    //looping through an array
+    $cars = array("Volvo", "BMW", "Toyota");
+    foreach ($cars as $x) {
+      echo "$x <br>";
+    };
+    echo '<br>';
+    
+    // adding new elements quickly
+    array_push($cars, 'ford');
+    var_dump($cars);
+    echo '<br>';
     ?>
 </body>
 </html>
